@@ -26,7 +26,7 @@ const visions = [
 
 function Vision() {
   return (
-    <section className="pt-32 pb-16 flex flex-col items-center justify-center px-6 min-h-screen">
+    <section className="page-enter pt-32 pb-16 flex flex-col items-center justify-center px-6 min-h-screen">
       <div className="flex flex-col items-center justify-center text-center mb-16">
         <h1 className="text-2xl md:text-3xl max-w-[600px] tracking-tight leading-snug text-center text-white/90">
           "Every website should solve a problem and create value. That belief is
@@ -48,7 +48,7 @@ function Vision() {
         </h2>
       </div>
 
-      <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="stagger-children w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-5">
         {visions.map(({ icon: Icon, title, desc }) => (
           <div
             key={title}

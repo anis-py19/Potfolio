@@ -41,7 +41,7 @@ const projects = [
 
 function Project() {
   return (
-    <section className="pt-32 pb-16 px-6">
+    <section className="page-enter pt-32 pb-16 px-6">
       <div className="cont w-full max-w-6xl mx-auto flex flex-col items-center">
         <div className="flex items-center flex-col text-center mb-14">
           <h2 className="text-3xl md:text-4xl flex items-center gap-2 font-extrabold">
@@ -61,7 +61,7 @@ function Project() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <div className="stagger-children grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {projects.map((project) => (
             <div
               key={project.name}

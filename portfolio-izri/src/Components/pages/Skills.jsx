@@ -21,7 +21,7 @@ function Skills() {
   { name: "Python", icon: SiPython, level: "Language" },
 ];
   return (
-    <section className="pt-32 pb-16 w-full px-6 min-h-screen">
+    <section className="page-enter pt-32 pb-16 w-full px-6 min-h-screen">
       <div className="max-w-5xl mx-auto">
         <div className="flex gap-4 items-center justify-center flex-col text-center mb-14">
           <span className="section-label">What I Work With</span>
@@ -34,7 +34,7 @@ function Skills() {
           </p>
         </div>
 
-        <div className="grid  grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+        <div className="stagger-children grid du  grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
           {skills.map(({ name, icon: Icon, level }) => (
             <div
               key={name}

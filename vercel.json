@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "installCommand": "cd portfolio-izri && npm install",
+  "buildCommand": "cd portfolio-izri && npm run build",
+  "outputDirectory": "portfolio-izri/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}

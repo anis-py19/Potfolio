@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 function NotFound() {
   const navigate = useNavigate();
   return (
-    <section className="px-6 pb-16 flex-col pt-16 flex items-center justify-center min-h-screen w-full text-center">
+    <section className="page-enter px-6 pb-16 flex-col pt-16 flex items-center justify-center min-h-screen w-full text-center">
       <div className="flex items-center justify-center flex-col gap-6 max-w-md">
         <h2 className="text-[7rem] md:text-[10rem] font-black leading-none gradient-text">
           404

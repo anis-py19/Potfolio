@@ -6,7 +6,7 @@ function Hero() {
   const navigate = useNavigate();
   return (
     <>
-      <section className="min-h-screen flex items-center justify-center px-4 pt-32 pb-16">
+      <section className="page-enter min-h-screen flex items-center justify-center px-4 pt-32 pb-16">
         <div className="max-w-6xl   mx-auto w-full">
           <div className="text-white flex flex-col gap-5 text-center">
             {/* Hi, I'm Anis */}
@@ -42,19 +42,28 @@ function Hero() {
             {/* Social Icons */}
             <div className="flex text-2xl gap-6 items-center justify-center mt-1 text-slate-400">
               <a
-                href="#"
+                href="https://github.com/anis-py19"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
                 className="hover:text-light transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
               >
                 <FaGithub />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/izri_dev/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
                 className="hover:text-highlight transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
               >
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@izri_dev"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="TikTok"
                 className="hover:text-accent transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
               >
                 <FaTiktok />

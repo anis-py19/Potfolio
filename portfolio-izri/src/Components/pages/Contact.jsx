@@ -29,7 +29,7 @@ const channels = [
 
 function Contact() {
   return (
-    <section className="min-h-screen px-6 pt-32 pb-16 flex flex-col items-center justify-center">
+    <section className="page-enter min-h-screen px-6 pt-32 pb-16 flex flex-col items-center justify-center">
       <div className="w-full max-w-xl text-center">
         <span className="section-label">Let's Work Together</span>
         <h2 className="text-4xl md:text-5xl tracking-tight mt-3">

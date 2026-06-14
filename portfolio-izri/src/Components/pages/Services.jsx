@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 
 function Services() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 pt-32 pb-16">
+    <section className="page-enter min-h-screen flex items-center justify-center px-4 pt-32 pb-16">
       <div className="max-w-2xl mx-auto w-full flex flex-col items-center text-center gap-6">
         {/* Status badge */}
         <span className="badge flex items-center justify-center">

@@ -30,7 +30,7 @@ const timeline = [
 
 function Story() {
   return (
-    <section className="min-h-screen px-6 pb-16 pt-32">
+    <section className="page-enter min-h-screen px-6 pb-16 pt-32">
       <div className="max-w-2xl mx-auto">
         <div className="flex flex-col items-center justify-center text-center mb-12">
           <span className="section-label">How I Started Coding</span>
