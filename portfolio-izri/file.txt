@@ -1,0 +1,33 @@
+portfolio-izri/
+├─ dist/
+│  ├─ assets/
+│  │  ├─ index-CelfOF-T.css
+│  │  └─ index-DH7CUYae.js
+│  └─ index.html
+├─ public/
+├─ src/
+│  ├─ Components/
+│  │  ├─ pages/
+│  │  │  ├─ Contact.jsx
+│  │  │  ├─ NotFound.jsx
+│  │  │  ├─ Project.jsx
+│  │  │  ├─ Services.jsx
+│  │  │  ├─ Skills.jsx
+│  │  │  ├─ Story.jsx
+│  │  │  └─ Vision.jsx
+│  │  ├─ Header.jsx
+│  │  └─ Hero.jsx
+│  ├─ App.jsx
+│  ├─ index.css
+│  └─ main.jsx
+├─ .env
+├─ .gitignore
+├─ eslint.config.js
+├─ file.txt
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ tailwind.config.js
+├─ vercel.json
+└─ vite.config.js
