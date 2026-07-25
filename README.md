@@ -67,15 +67,6 @@ Make sure you have Node.js installed on your machine.
    npm run dev
    ```
 
-## 📸 Screenshots
-
-*(You can add screenshots of your portfolio here! Just drag and drop images into GitHub and paste the markdown links here.)*
-
-| Hero Section | Projects Grid |
-| :---: | :---: |
-| <img src="https://via.placeholder.com/600x350/09090b/6d28d9?text=Hero+Section" alt="Hero Section" /> | <img src="https://via.placeholder.com/600x350/09090b/f472b6?text=Projects+Grid" alt="Projects Grid" /> |
-
-
 ## 🤝 Let's Connect!
 
 I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
