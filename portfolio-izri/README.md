@@ -1,73 +1,93 @@
+<div align="center">
+
 # 🚀 Anis Izri - Premium Portfolio
 
-Welcome to the source code of my personal portfolio website! This project is a showcase of my skills as a Frontend Developer, built with modern web technologies and designed with a premium, interactive user experience in mind.
+An immersive, highly interactive personal portfolio built for the modern web.
 
-## ✨ Features
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite_6-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-- **Modern & Premium Aesthetics**: A sleek dark mode UI with glassmorphism, dynamic mesh gradients, and carefully crafted typography.
-- **Fluid Animations**: High-performance, scroll-triggered animations and micro-interactions powered by Framer Motion.
-- **Bento Grid Layouts**: Trendy and highly readable UI layouts for showcasing skills and vision.
-- **Fully Responsive**: Flawless experience across all devices, from mobile phones to ultra-wide monitors.
-- **Fast & Optimized**: Built on Vite for lightning-fast HMR and optimized production builds.
+[Live Demo](#) · [Report Bug](#) · [Request Feature](#)
 
-## 🛠️ Tech Stack
+</div>
 
-- **Framework**: [React 19](https://react.dev/)
-- **Build Tool**: [Vite 6](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Routing**: [React Router v7](https://reactrouter.com/)
-- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
-- **Typography Effects**: [React Typed](https://www.npmjs.com/package/react-typed)
+---
+
+## ✨ About The Project
+
+Welcome to the open-source repository for my personal portfolio! I designed this project to act not just as a resume, but as a digital experience that showcases my skills in UI/UX design, frontend architecture, and complex web animations.
+
+The interface leverages **glassmorphism**, **bento grids**, and **dynamic mesh gradients** to create a premium, high-end feel.
+
+### 🌟 Key Features
+
+* **Scroll-Triggered Micro-Interactions**: Every section reveals itself fluidly using Framer Motion.
+* **Premium Dark Theme**: Carefully curated color palette (`zinc-950` with vibrant purple and pink accents).
+* **Bento Grid Design System**: Clean, readable, and trendy layout for skills and project showcases.
+* **Fully Responsive**: Pixel-perfect rendering across mobile, tablet, and ultra-wide desktop displays.
+
+## 🛠️ Built With
+
+* **[React 19](https://react.dev/)** - The library for web and native user interfaces.
+* **[Vite](https://vitejs.dev/)** - Next generation frontend tooling.
+* **[Tailwind CSS v4](https://tailwindcss.com/)** - A utility-first CSS framework for rapid UI development.
+* **[Framer Motion](https://www.framer.com/motion/)** - A production-ready motion library for React.
+* **[React Router v7](https://reactrouter.com/)** - Declarative routing for React.
 
 ## 🚀 Getting Started
 
-To run this project locally, follow these steps:
+Want to run this project locally to explore the code? Follow these simple steps.
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/portfolio.git
-cd portfolio/portfolio-izri
-```
+### Prerequisites
 
-### 2. Install dependencies
-Make sure you have Node.js installed, then run:
-```bash
-npm install
-```
+Make sure you have Node.js installed on your machine.
 
-### 3. Set up environment variables
-Rename `.env.example` to `.env` (or create one) and configure your variables:
-```env
-VITE_CONTACT_EMAIL="anisrayaneizri@gmail.com"
-VITE_INSTAGRAM_URL="https://www.instagram.com/izri_dev/"
-VITE_WHATSAPP_NUMBER="213780259026"
-```
+### Installation
 
-### 4. Run the development server
-```bash
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+1. **Clone the repo**
+   ```sh
+   git clone https://github.com/your-username/portfolio.git
+   cd portfolio/portfolio-izri
+   ```
+2. **Install NPM packages**
+   ```sh
+   npm install
+   ```
+3. **Set up Environment Variables**
+   Create a `.env` file in the root directory and add your contact details:
+   ```env
+   VITE_CONTACT_EMAIL="anisrayaneizri@gmail.com"
+   VITE_INSTAGRAM_URL="https://www.instagram.com/izri_dev/"
+   VITE_WHATSAPP_NUMBER="213780259026"
+   ```
+4. **Start the development server**
+   ```sh
+   npm run dev
+   ```
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-```text
-src/
-├── Components/
-│   ├── pages/         # Individual pages (Story, Skills, Project, Vision, Contact)
-│   ├── Header.jsx     # Navigation bar with glassmorphism
-│   ├── Hero.jsx       # Landing section with animated background
-├── App.jsx            # Routing configuration
-├── index.css          # Tailwind setup, CSS variables, and custom keyframes
-└── main.jsx           # React entry point
-```
+*(You can add screenshots of your portfolio here! Just drag and drop images into GitHub and paste the markdown links here.)*
 
-## 🤝 Contact
+| Hero Section | Projects Grid |
+| :---: | :---: |
+| <img src="https://via.placeholder.com/600x350/09090b/6d28d9?text=Hero+Section" alt="Hero Section" /> | <img src="https://via.placeholder.com/600x350/09090b/f472b6?text=Projects+Grid" alt="Projects Grid" /> |
 
-Feel free to reach out to me for collaboration or inquiries!
-- **Email**: anisrayaneizri@gmail.com
-- **Instagram**: [@izri_dev](https://www.instagram.com/izri_dev/)
+
+## 🤝 Let's Connect!
+
+I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+
+<div align="center">
+
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/izri_dev/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anisrayaneizri@gmail.com)
+
+</div>
 
 ---
-*Crafted with passion and code by Anis Izri.*
+<div align="center">
+  <p>Crafted with ❤️ and ☕ by <b>Anis Izri</b>.</p>
+</div>
