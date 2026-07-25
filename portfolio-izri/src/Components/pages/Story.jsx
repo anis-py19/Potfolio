@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const timeline = [
   {
@@ -30,18 +31,31 @@ const timeline = [
 
 function Story() {
   return (
-    <section className="page-enter min-h-screen px-6 pb-16 pt-32">
-      <div className="max-w-2xl mx-auto">
-        <div className="flex flex-col items-center justify-center text-center mb-12">
+    <section className="relative min-h-screen px-6 pb-16 pt-32 overflow-hidden">
+      <div className="max-w-2xl mx-auto relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-center justify-center text-center mb-12"
+        >
           <span className="section-label">How I Started Coding</span>
-          <h2 className="text-5xl md:text-6xl tracking-tight gradient-text mt-3">
+          <h2 className="text-5xl md:text-6xl font-black tracking-tight gradient-text mt-3">
             My Story
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="glass-card p-7 md:p-8 mb-14">
-          <p className="text-base text-center md:text-lg text-white/70 leading-relaxed">
-            I'm <span className="gradient-text font-semibold">Anis Izri</span>,
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="glass-card p-7 md:p-8 mb-16 relative overflow-hidden"
+        >
+          <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 blur-3xl rounded-full pointer-events-none" />
+          <p className="text-base text-center md:text-lg text-zinc-300 leading-relaxed relative z-10">
+            I'm <span className="text-white font-bold tracking-wide">Anis Izri</span>,
             a Front-End Developer in progress, passionate about building modern
             and clean web interfaces. I'm also a content creator and podcast
             host, where I share ideas about business, mindset, and personal
@@ -60,45 +74,64 @@ function Story() {
               </span>
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-0 relative">
           {timeline.map((item, i) => (
-            <div key={item.year} className="flex gap-5">
+            <motion.div 
+              key={item.year} 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="flex gap-5 relative"
+            >
               <div className="flex flex-col items-center">
-                <div className="w-3 h-3 rounded-full gradient-bg shrink-0 mt-2 shadow-glow-accent" />
+                <div className="w-3.5 h-3.5 rounded-full bg-gradient-to-br from-primary to-highlight shrink-0 mt-2 shadow-glow-accent ring-4 ring-black" />
                 {i < timeline.length - 1 && (
-                  <div className="w-px flex-1 bg-white/10 my-1" />
+                  <div className="w-0.5 flex-1 bg-gradient-to-b from-primary/50 to-transparent my-1 rounded-full" />
                 )}
               </div>
 
-              <div className="glass-card flex-1 p-5 mb-1">
-                <span className="badge">{item.year}</span>
-                <h3 className="text-lg font-semibold mt-4">{item.title}</h3>
-                <p className="text-sm text-white/50 mt-1.5 leading-relaxed">
+              <div className="glass-card flex-1 p-6 mb-8 hover:-translate-y-1 transition-transform duration-300">
+                <span className="badge !bg-white/5 !border-white/10 !text-zinc-300">{item.year}</span>
+                <h3 className="text-xl font-bold mt-4 text-white">{item.title}</h3>
+                <p className="text-sm text-zinc-400 mt-2 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="glass-card p-7 mt-14 text-center">
-          <span className="section-label">Turning Ideas Into Products</span>
-          <p className="text-lg md:text-xl mt-3 font-medium leading-relaxed">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="glass-card p-8 mt-14 text-center border-accent/20 bg-accent/5"
+        >
+          <span className="section-label !text-accent">Turning Ideas Into Products</span>
+          <p className="text-xl md:text-2xl mt-4 font-bold leading-relaxed text-white">
             My goal: become a developer who{" "}
             <span className="gradient-text">
               solves real problems for real people.
             </span>
           </p>
-        </div>
+        </motion.div>
 
-        <div className="flex justify-center mt-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex justify-center mt-12"
+        >
           <Link to="/project" className="btn-primary">
             View My Projects
-            <span aria-hidden="true">→</span>
+            <span aria-hidden="true" className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -5,10 +5,40 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null, info: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error, info) {
+    this.setState({ error, info });
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ padding: "20px", color: "red", backgroundColor: "black", minHeight: "100vh" }}>
+          <h1>React Runtime Error</h1>
+          <pre>{this.state.error?.toString()}</pre>
+          <pre>{this.state.info?.componentStack}</pre>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ErrorBoundary>
   </React.StrictMode>
 );
