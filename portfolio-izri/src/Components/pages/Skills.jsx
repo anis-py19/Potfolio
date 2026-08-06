@@ -6,6 +6,8 @@ import {
   SiReact,
   SiSqlite,
   SiPython,
+  SiExpress,
+  SiMongodb,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -16,6 +18,8 @@ function Skills() {
     { name: "JavaScript", icon: SiJavascript, level: "Language", color: "hover:text-[#F7DF1E]" },
     { name: "Tailwind", icon: SiTailwindcss, level: "Framework", color: "hover:text-[#06B6D4]" },
     { name: "React", icon: SiReact, level: "Library", color: "hover:text-[#61DAFB]" },
+    { name: "Express", icon: SiExpress, level: "Framework", color: "hover:text-[#ffffff]" },
+    { name: "MongoDB", icon: SiMongodb, level: "Database", color: "hover:text-[#47A248]" },
     { name: "SQLite", icon: SiSqlite, level: "Database", color: "hover:text-[#003B57]" },
     { name: "Python", icon: SiPython, level: "Language", color: "hover:text-[#3776AB]" },
   ];
